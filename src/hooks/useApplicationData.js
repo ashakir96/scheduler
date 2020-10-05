@@ -39,7 +39,10 @@ export default function useApplicationData() {
   const setDay = day => setState({ ...state, day });
 
   const bookInterview = (id, interview) => {
-    changeSpots(state, state.day, "minus")
+    if (!state.appointments[id].interview) {
+      changeSpots(state, state.day, "minus")
+    }
+    
     const appointment = {
       ...state.appointments[id],
       interview: { ...interview }
