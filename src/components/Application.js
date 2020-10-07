@@ -19,6 +19,7 @@ export default function Application(props) {
 
     return (<Appointment 
       key={appointment.id}
+      id={appointment.id}
       {...appointment}
       interview={getInterview(state, appointment.interview)}
       interviewers={interviewers}
