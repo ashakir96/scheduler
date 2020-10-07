@@ -2,8 +2,6 @@
 
 A web application built with React as a project for Lighthouse Labs. With this app, you will be able to create new appointments, update/edit existing appointments and delete scheduled appointments. The sidebar shows the days of the week with the number of spots available under them and the spots update when the appointments are added or deleted.
 
-**The API file must be run in Vagrant VM**
-
 ## Final Product
 
 !["Main Page"](https://github.com/ashakir96/scheduler/blob/master/docs/main-page.png)
