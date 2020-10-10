@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
+// creating custom hooks to show transistional phases
 
 export default function useVisualMode(initial) {
   const [mode, setMode] = useState(initial);
