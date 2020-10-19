@@ -51,10 +51,10 @@ export default function useApplicationData() {
     };
 
     return axios.put(`/api/appointments/${id}`, appointment).then((response) => {
-      setState({...state, appointments})
       if (!state.appointments[id].interview) {
-        changeSpots(state, state.day, "minus")
+        changeSpots(state, state.day, "minus");
       }
+      setState({...state, appointments});
     })
   }
 
@@ -68,8 +68,8 @@ export default function useApplicationData() {
         ...state.appointments,
         [id]: nullAppointment
       };
-      setState({...state, appointments})
-      changeSpots(state, state.day, "plus")
+      changeSpots(state, state.day, "plus");
+      setState({...state, appointments});
     });
   }
 
